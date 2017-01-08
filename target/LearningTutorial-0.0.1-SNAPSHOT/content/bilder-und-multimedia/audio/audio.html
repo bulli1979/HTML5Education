@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- 
+This file is based on audio.html from HTML5Bones 1.6.2 (Ian Devlin, html5bones.com).  
+Das Original enthält noch weitere Optionen. 
+-->
+<html lang="de"> 
+<head>
+	<meta charset="utf-8">
+	<title>HTML5 - Sounds einbinden mit audio </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+    html { 
+      font-size: 100%;    
+      font-family: Verdana, sans-serif;  
+      background: #f2f2f2; 
+    }
+    body { 
+      width: 500px; 
+      background: white; 
+      font-size: 0.875em; /* 14px */ 
+      padding: 1em;  
+      margin: 0 auto; 
+    }
+
+    h1 { font-size: 125%; }
+    h2 {
+      font-family: "Courier New", Courier, mono; 
+      font-size: 100%; 
+      font-weight: normal;
+      color: #666;
+      margin: 0 0 0.5em 0; 
+    }
+	</style>
+</head>
+<body>
+<a href="../../index.html">zurück</a><br>
+<h1>HTML5 - Sound einbinden mit &lt;audio&gt;</h1>
+	
+	<!-- Bedienelemente anzeigen und Metadaten laden -->	
+	<audio id="audio" controls preload="metadata">
+		
+		<!-- MP3 source for Chrome, Safari, IE9+, iOS and Android 2.3+ -->
+		<source src="thedruids.mp3" type="audio/mp3">
+		
+		<!-- Ogg source for Firefox, Chrome and Opera -->
+		<source src="thedruids.ogg" type="audio/ogg">
+		
+		<!-- Add a downloadable link for users who do not have a HTML5 audio capable browser -->
+		<a href="thedruids.mp3">Download MP3 audio</a>
+	</audio>
+
+	<!-- The main page footer can contain items such as copyright and contact information. It can also contain a duplicated navigation of your site which is not usually contained within a <nav> -->
+	<!-- ARIA: the landmark role "contentinfo" is added here as it contains metadata that applies to the parent document -->
+	<footer role="contentinfo">
+	
+		<!-- Copyright information can be contained within the <small> element. The <time> element is used here to indicate that the '2013' is a date -->
+		<small>Copyright &copy; <time datetime="2013">2013</time></small>
+		
+	</footer>
+
+  <!-- Required to initiate audio play in Android -->
+  <script>
+    // Use browser sniffing to check if it's a pre Android 4 device (some say browser sniffing is bad - but I think it's appropriate here)
+    var isPreAndroid4 = parseInt(navigator.userAgent.slice(navigator.userAgent.toLowerCase().indexOf('android')+8)) < 4;
+    
+    // If this is a pre Android 4 device, then add a click handler to play the audio and video when it is "clicked" (touched)
+    if (isPreAndroid4) {
+      var audio = document.getElementById("audio");
+      if (audio) audio.addEventListener("touchstart", function() { audio.play(); }, false);
+      var video = document.getElementById("video");
+      if (video) video.addEventListener("touchstart", function() { video.play(); }, false);
+    }
+  </script>
+	
+</body>
+</html>

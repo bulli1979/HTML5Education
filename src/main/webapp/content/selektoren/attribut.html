@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>HTML 5 CSS 3 Tutorial</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../vendor/bootstrap/bootstrap.css" />
+<link rel="stylesheet" href="../css/core.css" />
+ <style>    
+ 	 input[checked]{
+    box-shadow: 3px 3px 3px #ff0000;
+   } 
+   a[title="zur Webgate"]{
+    color:#ff0000;
+   }
+   a[href$=".pdf"]{
+    color:#33cc00;
+   }
+   a[href*="wikipedia.org"]{
+      color:#33ccff;
+    }
+
+    </style>
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="../index.html">Attribut Selektoren </a>
+			</div>
+
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1"></div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<main>
+		<div class="container">
+			<div>
+			<h3>attribut Selektor</h3>
+		<code>
+		input[checked]{
+	      box-shadow: 3px 3px 3px #ff0000;
+	    } 
+		</code><br>
+		<label><input type="checkbox" name="mycheckbox" checked> Checkbox</label>
+	</div>
+	<div>
+		<h3>Attribut Selektor mit Wert</h3>
+		<code>
+		a[title="zur Webgate"]{
+	      color:#ff0000;
+	   	}
+		</code><br>
+		<a href="webgate.biz">Webgate</a><br>
+		<a href="webgate.biz" title="zur Webgate" target="_blank">zur Webgate</a>
+	</div>
+	<div>
+		<h3>endet mit Selektor</h3>
+		<code>
+		a[href$=".pdf"]{
+	      color:#33cc00;
+	    }
+		</code><br>
+		<a href="test.pdf">Ein Dokument</a><br>
+	</div>
+	<div>
+		<h3>irgendwo Selektor</h3>
+		<code>
+		a[href*="wikipedia.org"]{
+	      color:#33ccff;
+	    }
+		</code><br>
+		<a href="https://de.wikipedia.org/wiki/Wikipedia:Hauptseite">Ein Dokument</a><br>
+	</div>
+	<div>
+		<h3>zum Nachschlagen alle</h3>
+		<code>element[attribut]</code> egal mit welchem Wert.<br>
+		<code>element[attribut="zeichen"]</code> mit genau diesem Wert.<br>
+		<code>element[attribut~="zeichen"]</code> mit unter anderem diesem Wert.<br>
+		<code>element[attribut^="zeichen"]</code> und "zeichen" steht am Anfang des Wertes,<br>
+		<code>element[attribut$="zeichen"]</code> und "zeichen" steht am Ende des Wertes <br>
+		<code>element[attribut*="zeichen"]</code> und "zeichen" steht irgendwo im Wert.<br>
+	</div>
+	<br>
+	<br>			 
+		</div>
+	</main>
+
+
+	<footer role="contentinfo" class="bs-docs-footer">
+		<div class="container">
+			<p class="pull-right">
+				Designed and built in Switzerland by <a
+					href="http://www.mirko-eberlein.com">Mirko Eberlein</a>.
+			</p>
+		</div>
+	</footer>
+
+</body>
+</html>
+

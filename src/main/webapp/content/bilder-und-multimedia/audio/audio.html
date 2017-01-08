@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>HTML 5 CSS 3 Tutorial</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../../vendor/bootstrap/bootstrap.css" />
+<link rel="stylesheet" href="../../css/core.css" />
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="../../index.html"> Audio </a>
+			</div>
+
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1"></div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<main>
+		<div class="container">
+			<h1>HTML5 - Sound einbinden mit &lt;audio&gt;</h1>
+	
+	<!-- Bedienelemente anzeigen und Metadaten laden -->	
+	<audio id="audio" controls preload="metadata">
+		
+		<!-- MP3 source for Chrome, Safari, IE9+, iOS and Android 2.3+ -->
+		<source src="thedruids.mp3" type="audio/mp3">
+		
+		<!-- Ogg source for Firefox, Chrome and Opera -->
+		<source src="thedruids.ogg" type="audio/ogg">
+		
+		<!-- Add a downloadable link for users who do not have a HTML5 audio capable browser -->
+		<a href="thedruids.mp3">Download MP3 audio</a>
+	</audio>
+
+<xmp>
+<audio id="audio" controls preload="metadata">
+	<!-- MP3 source für Chrome, Safari, IE9+, iOS and Android 2.3+ -->
+	<source src="thedruids.mp3" type="audio/mp3">
+	
+	<!-- Ogg source für Firefox, Chrome and Opera -->
+	<source src="thedruids.ogg" type="audio/ogg">
+	
+	<!-- Add a downloadable link for users who do not have a HTML5 audio capable browser -->
+	<a href="thedruids.mp3">kein HTML5 lade herunter</a>
+</audio>
+</xmp>
+		</div>
+	</main>
+
+
+	<footer role="contentinfo" class="bs-docs-footer">
+		<div class="container">
+			<p class="pull-right">
+				Designed and built in Switzerland by <a
+					href="http://www.mirko-eberlein.com">Mirko Eberlein</a>.
+			</p>
+		</div>
+	</footer>
+
+</body>
+</html>

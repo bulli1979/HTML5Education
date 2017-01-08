@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>HTML 5 CSS 3 Tutorial</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../../vendor/bootstrap/bootstrap.css" />
+<link rel="stylesheet" href="../../css/core.css" />
+<script type="text/javascript" src="../../vendor/_jquery/jquery-2.2.1.min.js"></script>
+<script type="text/javascript" src="../../vendor/bootstrap/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="../../index.html">Neue Input Typen
+				</a>
+			</div>
+
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1"></div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<main>
+	<div class="container">
+		<h1>HTML5 - Formulare</h1>
+		<ul class="nav nav-tabs">
+			<li class="active"><a data-toggle="tab" href="#date">Date</a></li>
+			<li><a data-toggle="tab" href="#other">andere Input Felder</a></li>
+		</ul>
+
+		<div class="tab-content">
+			<div id="date" class="tab-pane fade in active">
+				<p>Neue Input-Typen für Datum und Uhrzeit im Überblick</p>
+
+				<form id="html5elemente" action="./date.html" method="post">
+
+					<div>
+						<h2>&lt;input type="date"&gt;</h2>
+						<label for="date">Datum: </label> <input type="date" id="date"
+							name="date">
+					</div>
+
+					<div>
+						<h2>&lt;input type="month"&gt;</h2>
+						<label for="month">Monat: </label> <input type="month" id="month"
+							name="month">
+					</div>
+
+					<div>
+						<h2>&lt;input type="week"&gt;</h2>
+						<label for="week">Woche: </label> <input type="week" id="week"
+							name="week">
+					</div>
+
+
+					<div>
+						<h2>&lt;input type="time"&gt;</h2>
+						<label for="time">Uhrzeit: </label> <input type="time" id="time"
+							name="time">
+					</div>
+
+					<div>
+						<h2>&lt;input type="datetime"&gt;</h2>
+						<label class="long" for="datetime">Datum und Uhrzeit: </label> <input
+							type="datetime" id="datetime" name="datetime"> (mit
+						Zeitzone)
+					</div>
+
+					<div>
+						<h2>&lt;input type="datetime-local"&gt;</h2>
+						<label class="long" for="datetime-local">Datum und
+							Uhrzeit: </label> <input type="datetime-local" id="datetime-local"
+							name="datum-uhrzeit-ohne-zeitzone"> (ohne Zeitzone)
+					</div>
+
+					<div>
+						<input type="submit" value="Formular testen">
+					</div>
+
+				</form>
+			</div>
+			<div id="other" class="tab-pane fade">
+				<p>Neue Input-Typen im Überblick</p>
+
+				<form id="html5elemente" action="" method="get">
+					<div>
+						<h2>&lt;input type="text" placeholder="Waldemar Weber"&gt;</h2>
+						<label for="text">Name: </label> <input type="text" id="text"
+							name="text" placeholder="Waldemar Weber" disabled>
+					</div>
+
+					<div>
+						<h2>&lt;input type="text" required&gt;</h2>
+						<label for="text">Name <sup
+							title="Dieses Feld ist ein Pflichtfeld.">*</sup>
+						</label> <input type="text" id="text" name="text" required>
+					</div>
+
+					<div>
+						<h2>&lt;input type="email"&gt;</h2>
+						<label for="email">E-Mail: </label> <input type="email" id="email"
+							name="email">
+					</div>
+
+					<div>
+						<h2>&lt;input type="url"&gt;</h2>
+						<label for="url">URL: </label> <input type="url" id="url"
+							name="url">
+					</div>
+
+					<div>
+						<h2>&lt;input type="tel"&gt;</h2>
+						<label for="tel">Telefon: </label> <input type="tel" id="tel"
+							name="tel">
+					</div>
+
+					<div>
+						<h2>&lt;input type="search"&gt;</h2>
+						<label for="search">Suchen </label> <input type="search"
+							id="search" name="search">
+					</div>
+
+
+					<div>
+						<h2>&lt;input type="number" min="1" max="4"&gt;</h2>
+						<label for="tickets" class="tickets">Anzahl Tickets (1 bis
+							4): </label> <input type="number" id="tickets" name="tickets" min="1"
+							max="4" step="1">
+
+					</div>
+
+					<div>
+						<input type="submit" value="Formular testen">
+					</div>
+
+				</form>
+
+			</div>
+
+		</div>
+
+
+
+
+
+	</div>
+	</main>
+
+
+	<footer role="contentinfo" class="bs-docs-footer">
+		<div class="container">
+			<p class="pull-right">
+				Designed and built in Switzerland by <a
+					href="http://www.mirko-eberlein.com">Mirko Eberlein</a>.
+			</p>
+		</div>
+	</footer>
+
+</body>
+</html>
+
+
+
+

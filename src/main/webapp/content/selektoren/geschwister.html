@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>HTML 5 CSS 3 Tutorial</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../vendor/bootstrap/bootstrap.css" />
+<link rel="stylesheet" href="../css/core.css" />
+ <style>    
+ 	.brother + p { border-left: 5px solid lightblue; }
+
+  	.brother ~ p { border-right: 5px solid black; }
+
+    </style>
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="../index.html">Geschwister Selektoren </a>
+			</div>
+
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1"></div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<main>
+		<div class="container">
+			<div class="brother">
+				<h3>Die beiden Geschwister-Selektoren <code>+</code> und <code>~</code></h3> 
+			  	<p class="info">Diesen Absatz finden beide nicht.</p>
+			</div>
+			<p>Diesen Absatz finden beide Selektoren. Darum hat er auf beiden Seiten eine Rahmenlinie. 
+			Die linke kommt vom Selektor mit dem Pluszeichen <code>+</code>, die rechte vom Selektor mit der Tilde <code>~</code>.  
+			</p> 
+		
+			<p>Diesen Absatz findet nur der Selektor mit der Tilde <code>~</code>. 
+			Darum hat er nur rechts eine Rahmenlinie. Der Selektor mit dem Pluszeichen <code>+</code> 
+			findet den Absatz nicht, weil er nur benachbarte Geschwister auswählt. </p> 
+		
+			<div>
+				<code>
+				  header + p { border-left: 5px solid lightblue; }
+				  header ~ p { border-right: 5px solid pink; }
+				</code>
+			</div>
+		</div>
+	</main>
+
+
+	<footer role="contentinfo" class="bs-docs-footer">
+		<div class="container">
+			<p class="pull-right">
+				Designed and built in Switzerland by <a
+					href="http://www.mirko-eberlein.com">Mirko Eberlein</a>.
+			</p>
+		</div>
+	</footer>
+
+</body>
+</html>

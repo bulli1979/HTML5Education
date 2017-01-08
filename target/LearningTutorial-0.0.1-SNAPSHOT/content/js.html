@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>HTML5 CSS3</title>
+<style>
+html {
+	font-size: 100%;
+	font-family: Verdana, sans-serif;
+	background: #f2f2f2;
+}
+
+body {
+	width: 800px;
+	background: white;
+	font-size: 18px;
+	padding: 1em;
+	margin: 0 auto;
+}
+
+h2 {
+	font-size: 24px;
+	font-size: 1.5rem;
+	color: #666;
+	margin-top: 3em;
+}
+
+table {
+	width: 100%;
+}
+
+table th, table td {
+	font-size: 18px;
+}
+
+table td, table th {
+	width: 50%;
+	text-align: left;
+}
+
+.button {
+	cursor:pointer;
+	margin-top:5px;
+	float: left;
+	width: 160px;
+	padding: 5px;
+	margin-right: 10px;
+	border: 1px #333333 solid;
+	border-radius: 5px;
+	text-align:center;
+	background-color:#1c70a0;
+	color:#ffffff;
+	font-weight:bold;
+}
+
+.clear {
+	clear: both;
+}
+</style>
+</head>
+
+<body>
+	<h2>Java Script</h2>
+	<h4>Mirko Eberlein</h4>
+
+	<div>
+	Warum Objectorientiert?
+	Eigenen NameSpace definieren warum? <code>var MYNS = {};</code>
+	</div>
+	<form name="person">
+		<div>
+			<label>Name:<br> 
+			<input type="text" name="name" id="name"><br>
+			</label> 
+			<label>Vorname:<br> <input type="text" name="fistName"
+				id="firstName">
+			</label>
+		</div>
+		<div class="clear"></div>
+		<div>
+			<div class="button" id="new">erstellen</div>
+			<div class="button" id="fillList">Liste erstellen</div>
+			<div class="button" id="reset">Reset</div>
+			<div class="button" id="funktionstest">Funktionstest</div>
+			<div class="button" id="ajax">Ajax</div>
+			<div class="clear"></div>
+		</div>
+	</form>
+	<div id="list"></div>
+	<div>
+	<br>
+		<a href="http://www.jslint.com/">JSLinth</a><br>
+		<a href="http://www.w3schools.com/tags/ref_eventattributes.asp" target="blank">Übersicht</a><br><br>
+	</div>
+	
+	
+	<script src="test.js"></script>
+	<script src="objectjs2.js"></script>
+</body>
+</html>

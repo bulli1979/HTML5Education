@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">	
+	<title>::before und ::after</title>
+
+  <style>
+  body { width: 50%; margin: 0 auto; line-height: 1.7; font-family: sans-serif;}
+  h1 { font-size: 1.25em; margin-bottom: 0.5em;}
+
+  a[href^="http"]:after {
+    content: " \2192"
+  }
+  code {
+      font-size: 14px;
+      font-size: 0.875rem;
+    }
+
+  </style>
+
+	<!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+</head>
+<body>
+<div>
+<a href="../index.html">zurück</a>
+<h1>Externe Links kennzeichnen mit ::after</h1> 
+
+<a href="../index.html">Startseite</a><br>
+<a href="http://webgate.biz/">Website</a><br>
+<a href="https://www.facebook.com/myWebGate/?fref=ts">Webgate Facebook</a><br>
+</div>
+<div>
+ <code>
+  a[href^="http"]:after {
+    content: " \2192"
+  }
+ </code>
+ </div>
+</body>
+</html>

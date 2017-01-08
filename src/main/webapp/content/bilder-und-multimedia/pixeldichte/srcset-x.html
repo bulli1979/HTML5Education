@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>HTML 5 CSS 3 Tutorial</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../../vendor/bootstrap/bootstrap.css" />
+<link rel="stylesheet" href="../../css/core.css" />
+<script type="text/javascript" src="../../vendor/_jquery/jquery-2.2.1.min.js"></script>
+<script type="text/javascript" src="../../vendor/bootstrap/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="../../index.html">Bilder Pixeldichte
+				</a>
+			</div>
+
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1"></div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<main>
+	<div class="container">
+		<h1>Grafiken einbinden mit srcset x</h1>
+		<p>Browser DPI wird abgefragt und das ensprechende Bild verwendet.</p> 
+		
+		<figure>
+		  <img src="small.jpg" 
+		       alt="Brücken in New York"
+		       srcset="small.jpg 1x, medium.jpg 2x, large.jpg 3x">
+		  <figcaption>Brücken in New York</figcaption>
+		</figure>
+		
+		<code>
+		<xmp>
+		<figure>
+		  <img src="small.jpg" 
+		       alt="Brücken in New York"
+		       srcset="small.jpg 1x, medium.jpg 2x, large.jpg 3x">
+		  <figcaption>Brücken in New York</figcaption>
+		</figure>
+		</xmp>
+
+
+	</div>
+	</main>
+
+
+	<footer role="contentinfo" class="bs-docs-footer">
+		<div class="container">
+			<p class="pull-right">
+				Designed and built in Switzerland by <a
+					href="http://www.mirko-eberlein.com">Mirko Eberlein</a>.
+			</p>
+		</div>
+	</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

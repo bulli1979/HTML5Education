@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<title>HTML Basic</title>
+<style>
+html {
+	font-size: 100%;
+	font-family: Verdana, sans-serif;
+	background: #f2f2f2;
+}
+
+body {
+	width: 800px;
+	background: white;
+	font-size: 18px;
+	padding: 1em;
+	margin: 0 auto;
+}
+
+td {
+	vertical-align: top;
+	padding: 5px;
+	color: #333333;
+}
+
+tr td:nth-child(1){
+	width: 100px;
+	font-weight:bold;
+}
+
+tr:nth-child(2n) {
+	background-color: #eeeeee;
+}
+
+xmp {
+font-size: 18px;
+	padding: 0;
+	margin: 0;
+}
+td code{font-weight:bold;}
+</style>
+</head>
+<body>
+<a href="../index.html">zurück</a>
+	<h1>Basic HTML</h1>
+	<div>
+		<code>
+			<xmp><!doctype html> <!DOCTYPE HTML PUBLIC 
+"-//W3C//DTD HTML 4.01 Transitional//EN" 
+"http://www.w3.org/TR/html4/loose.dtd"> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> </xmp>
+		</code>
+	</div>
+	<h3>Elemente</h3>
+	<div>
+		<table>
+			<tr>
+				<td><code><xmp><div></xmp>
+					</code></td>
+				<td>Element dient Hauptsächlich zum unterteilen der Webseite in
+					verschiedene Bereiche.</td>
+			</tr>
+			<tr>
+				<td><code><xmp><table></xmp>
+					</code></td>
+				<td>Strukturierte Darstellung</td>
+			</tr>
+			<tr>
+				<td><code><xmp><ul></xmp>
+					</code></td>
+				<td>Listen Menüs</td>
+			</tr>
+			<tr>
+				<td><code><xmp><header></xmp>
+					</code></td>
+				<td>Definiert den Kopfteil ("header") einer Seite oder eines Abschnitts. 
+				Er enthält oft ein Logo, den Titel der Website und die Seitennavigation.</td>
+			</tr>
+			<tr>
+				<td><code><xmp><footer></xmp>
+					</code></td>
+				<td>Definiert den Fußteil ("footer") einer Seite oder eines Abschnitts. 
+				Er enthält oft Copyright-Hinweise, einen Link auf das Impressum oder Kontaktadressen. (SEO ignore)</td>
+			</tr>
+			<tr>
+				<td><code><xmp><nav></xmp>
+					</code></td>
+				<td>Beschreibt einen Abschnitt der ausschließlich Navigationslinks enthält. (zum Beispiel topMenu,SEO ignore)</td>
+			</tr>
+			<tr>
+				<td><code><xmp><article></xmp>
+					</code></td>
+				<td>Beschreibt eigenständigen Inhalt, der unabhängig von den übrigen Inhalten sein kann. 
+				Artikel immer dann wenn man ohne den rest der Seite auch weiss um was es geht.</td>
+			</tr>
+			<tr>
+				<td><code><xmp><aside></xmp>
+					</code></td>
+				<td>Zusätzliche Informationen zum Inhalt. Ohne aside sollte der Inhalt trotzdem verständlich sein.</td>
+			</tr>
+			<tr>
+				<td><code><xmp><address></xmp>
+					</code></td>
+				<td>Kontaktinformationen in einem Address tag. (SEO good)</td>
+			</tr>
+			<tr>
+				<td><code><xmp><main></xmp>
+					</code></td>
+				<td>definiert den Hauptteil der seite. Nur einmal pro Seite. (Meist der Teil wo informationen stehen ohne Menu ohne footer Header, SEO good)</td>
+			</tr>
+			<tr>
+				<td>Links zu HTML 5</td>
+				<td>
+					<a target="blank" href="https://developer.mozilla.org/de/docs/Web/HTML/HTML5/HTML5_element_list">Übersicht über Elemente</a><br>
+					<a target="blank" href="http://caniuse.com/">Übersicht über alle HTML 5 Tags und wleche Browser diese schon unterstützen</a><br>
+					<a target="blank" href="https://validator.w3.org/">Validator für html Seiten</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				id,title,class
+				</td>
+				<td>
+					Id für identifizierung von Elementen (JavaScript), <br>
+					title zum beschriften von Elementen. (Links, Bilder usw. wichtig für Blinde und Suchmaschienen bei Bildern)<br>
+					class zum festlegen Styleklassen (CSS) 
+				</td>
+			</tr>
+			<tr>
+				<td>SEO Attribute</td>
+				<td>Es gibt verschiedene Möglichkeiten noch für SEO aufzubereiten. <br>
+					Dies fördert die Darstellung von Artikeln, Produkten usw. in Suchaufrufen.<br>
+					<a target="blank" href="http://schema.org/docs/gs.html">Schema Strukturierte Daten</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

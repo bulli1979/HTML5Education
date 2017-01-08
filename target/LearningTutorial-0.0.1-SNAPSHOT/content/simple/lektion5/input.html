@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">	
+	<title>HTML5 - Formularelemente - Input</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body { 
+    width: 80%; 
+    font-family: Verdana, sans-serif; 
+    margin: 0 auto; 
+  }
+  h1 { font-size: 125%; }
+  h2 {
+    font-family: "Courier New", Courier, mono; 
+    font-size: 100%; 
+    font-weight: normal;
+    color: #666;
+    margin: 0 0 0.5em 0; 
+  }
+  div { 
+    margin-top: 1em; 
+    padding: 1em; 
+    background-color: #f2f2f2; 
+    border: 1px solid #ccc;
+    margin-bottom: 3em; 
+  }
+  label { 
+    display: inline-block;
+    width: 4em;
+    text-align: right;
+    cursor: pointer;
+    margin-bottom: 0.2em;
+  }
+  label.tickets { width: auto;}
+  input {
+    padding: 0.25em;
+    font-size: 0.9em; 
+  }
+  input[type="search"] {
+    font-size: 1em; 
+    /* In Chrome/Safari wie Textfeld */ 
+    /*-webkit-appearance: textfield;*/
+    background-color: pink;
+  }
+  input[type="submit"] {
+    min-width: auto; 
+    width: 10em;
+    background-color: #08c;
+    border: 1px solid #08c; 
+    border-radius: 0.25em;
+    color: white; 
+    cursor: pointer;
+  }
+
+  /* 2013-04-13 - Pseudoklassen für Formulare */ 
+
+  /*input:disabled { background: lightyellow; }*/
+  /*input[disabled] { background: lightblue; }*/
+
+  /*input:enabled { background: lightyellow; }*/
+  /*input:not([disabled]) { background: lightblue; }*/
+
+  /* Die Browser gestalten Checkboxen anscheinend nicht 
+     aber im Firebug kommt die beiden Styles an. 
+     Ich habe die Checkbox wieder aus dem Formular entfernt */ 
+  /*input:checked { background: lightyellow; }*/
+  /*input[checked] { background: lightblue; }*/
+
+  
+  </style>
+</head>
+<body>
+<a href="../../index.html">zurück</a><br>
+<a href="date.html">date</a>
+<h1>HTML5 - Formulare - Input</h1>
+<p>Neue Input-Typen im Überblick</p>
+
+<form id="html5elemente" action="" method="get">
+<div>
+<h2>&lt;input type="text" placeholder="Waldemar Weber"&gt;</h2>
+<label for="text">Name: </label>
+<input type="text" id="text" name="text" placeholder="Waldemar Weber" disabled> 
+</div>
+
+<div>
+<h2>&lt;input type="text" required&gt;</h2>
+<label for="text">Name <sup title="Dieses Feld ist ein Pflichtfeld.">*</sup> </label>
+<input type="text" id="text" name="text" required> 
+</div>
+
+<div>
+<h2>&lt;input type="email"&gt;</h2>
+<label for="email">E-Mail: </label>
+<input type="email" id="email" name="email"> 
+</div>
+
+<div>
+<h2>&lt;input type="url"&gt;</h2>  
+<label for="url">URL: </label>
+<input type="url" id="url" name="url"> 
+</div>
+
+<div>
+<h2>&lt;input type="tel"&gt;</h2>  
+<label for="tel">Telefon: </label>
+<input type="tel" id="tel" name="tel"> 
+</div>
+
+<div>
+<h2>&lt;input type="search"&gt;</h2>
+<label for="search">Suchen </label>
+<input type="search" id="search" name="search"> 
+</div>
+
+
+<div>
+<h2>&lt;input type="number" min="1" max="4"&gt;</h2>  
+<label for="tickets" class="tickets">Anzahl Tickets (1 bis 4): </label>
+<input type="number" id="tickets" name="tickets" min="1" max="4" step="1"> 
+
+</div>
+
+<div>
+<input type="submit" value="Formular testen">
+</div>
+
+</form>
+
+</body>
+</html>

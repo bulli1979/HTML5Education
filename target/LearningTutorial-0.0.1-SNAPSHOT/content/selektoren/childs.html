@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>::before und ::after</title>
+
+<style>
+body {
+	width: 800px;
+	margin: 0 auto;
+	line-height: 1.7;
+	font-family: sans-serif;
+	font-size:18px;
+}
+
+h1 {
+	font-size: 1.25em;
+	margin-bottom: 0.5em;
+}
+
+code {
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+
+ul li {
+	float: left;
+	border-right: 1px solid #ccc;
+	list-style-type: none;
+	padding: 0 0.5em;
+}
+
+ul li:first-child {
+	border-left: 1px solid #ccc;
+}
+
+.clear {
+	clear: both;
+}
+
+table tr {
+	background-color: #eeeeee;
+	color: #333333;
+}
+
+table tr:nth-child(2n) {
+	background-color: #333333;
+	color: #ffffff;
+}
+
+tr td:nth-child(2n) {
+	background-color: rgba(255, 0, 0, 0.3);
+}
+q
+</style>
+
+<!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+</head>
+<body>
+	<a href="../index.html">zurück</a>
+	<h1>Child Selektoren</h1>
+	<div>
+		<h3>First Child</h3>
+		<code><xmp>ul li { 
+  float: left; 
+  border-right: 1px solid #ccc;
+  list-style-type: none; 
+  padding: 0 0.5em; 
+}
+ul li:first-child {
+  border-left: 1px solid #ccc; 
+}</xmp>
+		</code>
+		<ul>
+			<li><a href="#">Startseite</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Über uns</a></li>
+			<li><a href="#">Kontakt</a></li>
+		</ul>
+	</div>
+	<div class="clear"></div>
+	<div>
+		<h3>N't Child</h3>
+		<code><xmp>table tr{ 
+  background-color: #eeeeee; 
+  color: #333333; 
+}
+table tr:nth-child(2n) { 
+  background-color: #333333; 
+}
+tr td:nth-child(2n) { 
+	background-color: rgba(255, 0, 0, 0.3); 
+}</xmp>
+		</code>
+		<table class="example">
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+			</tr>
+			<tr>
+				<td>13</td>
+				<td>14</td>
+				<td>15</td>
+				<td>16</td>
+				<td>17</td>
+				<td>18</td>
+			</tr>
+			<tr>
+				<td>19</td>
+				<td>20</td>
+				<td>21</td>
+				<td>22</td>
+				<td>23</td>
+				<td>24</td>
+			</tr>
+			<tr>
+				<td>25</td>
+				<td>26</td>
+				<td>27</td>
+				<td>28</td>
+				<td>29</td>
+				<td>30</td>
+			</tr>
+			<tr>
+				<td>31</td>
+				<td>32</td>
+				<td>33</td>
+				<td>34</td>
+				<td>35</td>
+				<td>36</td>
+			</tr>
+			<tr>
+				<td>37</td>
+				<td>38</td>
+				<td>39</td>
+				<td>40</td>
+				<td>41</td>
+				<td>42</td>
+			</tr>
+			<tr>
+				<td>43</td>
+				<td>44</td>
+				<td>45</td>
+				<td>46</td>
+				<td>47</td>
+				<td>48</td>
+			</tr>
+			<tr>
+				<td>49</td>
+				<td>50</td>
+				<td>51</td>
+				<td>52</td>
+				<td>53</td>
+				<td>54</td>
+			</tr>
+			<tr>
+				<td>55</td>
+				<td>56</td>
+				<td>57</td>
+				<td>58</td>
+				<td>59</td>
+				<td>60</td>
+			</tr>
+		</table>
+
+	</div>
+	<div>
+		<h3>first of type</h3>
+<code><xmp>article p:first-of-type { 
+  font-style: italic; 
+  margin-top:0; 
+}</xmp>
+		</code>
+		<article>
+			<p>article 1</p>
+			<p>article 2</p>
+			<p>article 3</p>
+		</article>
+	</div>
+</body>
+</html>

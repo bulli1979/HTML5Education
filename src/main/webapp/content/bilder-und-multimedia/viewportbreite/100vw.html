@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>HTML 5 CSS 3 Tutorial</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../../vendor/bootstrap/bootstrap.css" />
+<link rel="stylesheet" href="../../css/core.css" />
+<script type="text/javascript" src="../../vendor/_jquery/jquery-2.2.1.min.js"></script>
+<script type="text/javascript" src="../../vendor/bootstrap/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="../../index.html">Bilder optimieren
+				</a>
+			</div>
+
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1"></div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<main>
+	<div class="container">
+		<ul class="nav nav-tabs">
+			<li class="active"><a data-toggle="tab" href="#vm">Flexible Grafiken: srcset w</a></li>
+			<li><a data-toggle="tab" href="#mq">srcset w und sizes="(min-width: 600px) 50vw, 100vw"</a></li>
+		</ul>
+
+		<div class="tab-content">
+			<div id="vw" class="tab-pane fade in active">
+				<figure>
+  <img srcset="small.jpg 400w, 
+               medium.jpg 800w, 
+               large.jpg 1600w"
+       src="small.jpg" 
+       style="max-width:100%"
+       alt="Brücken in New York">
+  <figcaption>Brücken in New York</figcaption>
+</figure>
+<xmp>
+<figure>
+	<img 
+	srcset="small.jpg 400w, medium.jpg 800w,large.jpg 1600w" 
+	style="max-width:100%" 
+	src="small.jpg" 
+	alt="Brücken in New York">
+	<figcaption>Brücken in New York</figcaption>
+</figure>
+</xmp>
+				
+			</div>
+			<div id="mq" class="tab-pane fade">
+				<figure>
+    <img srcset="small.jpg 400w, 
+                 medium.jpg 800w, 
+                 large.jpg 1600w"
+         sizes="(min-width:600px) 50vw, 100vw"
+         style="max-width:100%"
+         src="small.jpg" 
+         alt="Brücken in New York">
+    <figcaption>Brücken in New York</figcaption>
+  </figure>
+  
+  <xmp>
+   <figure>
+    <img srcset="small.jpg 400w, 
+                 medium.jpg 800w, 
+                 large.jpg 1600w"
+         sizes="(min-width:600px) 50vw, 100vw"
+         src="small.jpg" 
+         style="max-width:100%"
+         alt="Brücken in New York">
+    <figcaption>Brücken in New York</figcaption>
+  </figure>
+  </xmp>
+
+				
+			</div>
+
+		</div>
+
+
+	</div>
+	</main>
+
+
+	<footer role="contentinfo" class="bs-docs-footer">
+		<div class="container">
+			<p class="pull-right">
+				Designed and built in Switzerland by <a
+					href="http://www.mirko-eberlein.com">Mirko Eberlein</a>.
+			</p>
+		</div>
+	</footer>
+
+</body>
+</html>

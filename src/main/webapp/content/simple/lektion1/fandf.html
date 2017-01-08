@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>HTML 5 CSS 3 Tutorial</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../../vendor/bootstrap/bootstrap.css" />
+<link rel="stylesheet" href="../../css/core.css" />
+  <style>
+    figure { 
+      padding: 0; 
+      margin: 0 1em 3em 0; 
+    }
+    figcaption { 
+      font-size: 16px;
+      color: #333;
+      text-align: center;
+    }
+    img { 
+      padding: 0.25em; 
+      border-radius: 0.5em;
+      max-width: 100%; 
+      height: auto;
+    }
+
+    figure.ein-bild figcaption {
+      position: relative;
+      top: -3em;
+      font-size: 16px;
+      color: white;
+      font-weight: bold;  
+    }
+
+    figure.zwei-bilder img {
+      float: left;
+      width: 47%;
+      margin-right: 0.25em;
+    }
+    figure.zwei-bilder figcaption {
+      clear: both;
+    }
+
+  </style>
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="../../index.html"> Figure und Figure Caption </a>
+			</div>
+
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1"></div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<main>
+		<div class="container">
+			<h2>Ein Bild</h2>
+			
+			<figure class="ein-bild">
+				<img src="bild1.jpg" alt="Mirko Eberlein"> 
+				<figcaption>Ein Bild mit Beschriftung</figcaption> 
+			</figure>
+			<h2>Mehrere Bilder mit Beschriftung</h2>
+			
+			<figure class="zwei-bilder">
+			  <img src="bild1.jpg" alt="nochmal ME"> 
+			  <img src="bild2.jpg" alt="Webgate"> 
+			  <figcaption>2 Bilder</figcaption> 
+			</figure>
+			
+			<xmp>
+				<figure class="ein-bild">
+				  <img src="bild1.jpg" alt="Mirko Eberlein"> 
+				  <figcaption>Ein Bild mit Beschriftung</figcaption> 
+				</figure>
+				<figure class="zwei-bilder">
+				  <img src="bild1.jpg" alt="nochmal ME"> 
+				  <img src="bild2.jpg" alt="Webgate"> 
+				  <figcaption>2 Bilder</figcaption> 
+				</figure>
+			</xmp>
+		</div>
+	</main>
+
+
+	<footer role="contentinfo" class="bs-docs-footer">
+		<div class="container">
+			<p class="pull-right">
+				Designed and built in Switzerland by <a
+					href="http://www.mirko-eberlein.com">Mirko Eberlein</a>.
+			</p>
+		</div>
+	</footer>
+
+</body>
+</html>
