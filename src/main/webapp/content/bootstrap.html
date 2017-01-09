@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>HTML 5 CSS 3 Tutorial</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="vendor/bootstrap/bootstrap.css" />
+<link rel="stylesheet" href="css/core.css" />
+<script type="text/javascript" src="vendor/_jquery/jquery-2.2.1.min.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript">
+function navigation() {
+    var nav = document.getElementById("topnav");
+    if (nav.className === "topnav") {
+    	nav.className += " responsive";
+    } else {
+    	nav.className = "topnav";
+    }
+}
+</script>
+<style>
+body {margin:0;}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="./index.html">
+				Bootstrap </a>
+			</div>
+
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1"></div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<main>
+	<div class="container">
+		<h1>Übersicht</h1>
+		<p>
+			Bootsrap ist ein fertiges CSS Framework was umfangreiche Funktionen bietet. <br>
+			Sehr grosse Comunity so das man sehr viele fertige Lösungen findet. 
+		</p>
+		<div>
+			Einfaches Menübeispiel.
+			<div>
+			<ul class="topnav" id="topnav">
+  <li><a class="active" href="#home">Startseite</a></li>
+  <li><a href="#news">Neues</a></li>
+  <li><a href="#contact">Kontakt</a></li>
+  <li><a href="#about">Über uns</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="navigation()">☰</a>
+  </li>
+</ul>
+			
+			</div>
+			
+			
+		</div>
+		<div>
+		Weitere sehr gute Beispiele findet man unter.
+		<a href="http://www.w3schools.com/bootstrap/">Bootstrap W3 School</a>
+		
+		</div>
+		
+		
+		
+	</div>
+	</main>
+
+
+	<footer role="contentinfo" class="bs-docs-footer">
+		<div class="container">
+			<p class="pull-right">
+				Designed and built in Switzerland by 
+				<a href="http://www.mirko-eberlein.com">Mirko Eberlein</a>.
+			</p>
+		</div>
+	</footer>
+
+</body>
+</html>
